@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+}
+ 
+.navbar.colorChange {
+    background-color: blue;
+}
+
+.enactus-navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+	width: 100%;
+    justify-content: center;
+	text-align: center;
+    z-index: 12;
+    height: 10%;
+    margin-top: -1vh;
+}
+
+
+
+.enactus-navbar-options {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.35vw;
+    font-weight: 700;
+    margin-right: 4vw;
+    margin-top: 2vh;
+    letter-spacing: 0.05rem;
+    position: relative; /* Add this to establish a positioning context */
+}
+
+/* Add an underline to the links using the ::after pseudo-element */
+.enactus-navbar-options::after {
+    content: "";
+    position: absolute;
+    width: 0;
+	top: 4vh;
+    height: 7px;
+    background-color: #FEC415; /* Change this to the color you prefer */
+	cursor: pointer;
+    bottom: 0; /* Adjust this value to control the distance between the link text and the underline */
+    left: 0;
+    transition: width 0.3s; /* Add a smooth transition effect to the width */
+}
+
+
+.enactus-navbar-options:hover::after {
+    width: 100%;
+}
+
+
+
+.enactus-navbar li {
+    list-style: none;
+}

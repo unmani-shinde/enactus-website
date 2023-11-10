@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+*{
+  font-family:'Poppins',sans-serif;
+}
+
+.enactus-home-heading {
+    font-size: 12vw;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+    /* background-image: url('../assets/Home/text2.jpg');
+    background-clip: text;
+    -webkit-background-clip: text; */
+    color: white;
+    font-weight: 600;
+    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Increased X and Y offsets */
+}
+
+.welcome-heading{
+    font-family:'Poppins',sans-serif;
+    margin-bottom: -2vh;
+    text-align: left;
+    color:#040D12;
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.What-is-Enactus img{
+  margin-top: -1vh;
+}
+
+.What-is-Enactus {
+  padding-right: 1vw;
+}
+
+.What-is-Enactus p{
+  font-size: 1.25vw;
+  margin-top: -6vh;
+
+}
+
+
+
