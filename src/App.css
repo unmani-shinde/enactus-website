@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #F4E869; /* Color of the thumb */
+  border-radius: 0px; /* Rounded corners for the thumb */
+}
+
+/* Style the scrollbar track when the thumb is being hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #F4E869;
+}

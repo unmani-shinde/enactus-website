@@ -1,0 +1,16 @@
+/* Filename - App.js */
+
+.App {
+    text-align: center;
+    }
+    
+    .navbar {
+        z-index: 14;
+        background-color: transparent;
+    }
+    
+    .navbar.colorChange {
+        z-index: 14;
+        background-color: blue;
+    }
+    

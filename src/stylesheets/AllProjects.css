@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: blue; /* Color of the thumb */
+    border-radius: 0px; /* Rounded corners for the thumb */
+  }
+  
+  /* Style the scrollbar track when the thumb is being hovered */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blue;
+  }
+  

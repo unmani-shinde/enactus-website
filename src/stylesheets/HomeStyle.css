@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+/* HOME 2 STYLE */
+
+/* #container {
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+.panel {
+  position: absolute;
+  will-change: transform;
+} */
+
+
+.enactus-home-heading {
+  font-size: 12vw;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  
+
+  color: white;
+  font-weight: 600;
+  
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.introduction{
+  background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%);
+  
+}
+
+.introduction-paragraph{
+  font-size: 1.5vw;
+  max-width: 70%;
+
+}
+.introduction-know-more-button{
+  color: #FFF6F6;
+  background-color: transparent;
+  border: solid 4px #FFF6F6;
+  padding: 0.5vw;
+  font-size: 1.25vw;
+  font-weight: 700;
+  letter-spacing: 0.5vh;
+  border-radius: 20px;
+  width: 20%;
+  
+}
+.project-card .hover-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  transition: height 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.project-card:hover .hover-effect {
+  height: 100%;
+}
+.teams{
+  background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%);
+}
+
+
+
+
+
+
+/*OG HOME STYLE */
+
+/* .enactus-home-heading {
+    font-size: 12vw;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
+  
+    color: white;
+    font-weight: 600;
+    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.welcome-heading{
+    font-family:'Poppins',sans-serif;
+    margin-bottom: -2vh;
+    text-align: left;
+    color:#040D12;
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.What-is-Enactus img{
+  margin-top: -1vh;
+}
+
+.What-is-Enactus {
+  padding-right: 1vw;
+}
+
+.What-is-Enactus p{
+  font-size: 1.25vw;
+  margin-top: -6vh;
+
+}
+ */
+
+
