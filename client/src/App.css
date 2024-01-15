@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+
+.enactus-navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  align-items: center;
+  background-color: inherit;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  z-index: 12;
+  height: 10%;
+  margin-top: -1vh;
+}
+
+
+
+.enactus-navbar-options {
+  text-decoration: none;
+  
+  background-color: transparent;
+  border: none;
+  font-size: 1.35vw;
+  font-weight: 700;
+  margin-right: 4vw;
+  margin-top: 2vh;
+  letter-spacing: 0.05rem;
+  position: relative; /* Add this to establish a positioning context */
+}
+
+/* Add an underline to the links using the ::after pseudo-element */
+.enactus-navbar-options::after {
+  content: "";
+  position: absolute;
+  width: 0;
+top: 4vh;
+  height: 8px;
+  background-color: #FEC415; /* Change this to the color you prefer */
+cursor: pointer;
+  bottom: 0; /* Adjust this value to control the distance between the link text and the underline */
+  left: 0;
+  transition: width 0.3s; /* Add a smooth transition effect to the width */
+}
+
+
+.enactus-navbar-options:hover::after {
+  width: 100%;
+}
+
+
+
+.enactus-navbar li {
+  list-style: none;
+}
+
+
+
+
+/* HOMEPAGE CSS */
+
+.enactus-heading{
+  font-size: 11.5vw;
+  font-weight: 700;
+  z-index: 400;
+  color: white;
+  position: relative;
+  letter-spacing: -0.5vw;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  
+}
+
+.homepage-fade-in-animation{
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.home-container{
+  /* background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%); */
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+
+}
+
+/*.home-container-two {
+  /* background-color: #E7B10A;
+  filter: brightness(0.9); */
+  
+  /* background-image: linear-gradient(180deg, #FFBB64 0%, #f57c4b 100%); 
+}
+ */
+
+.home-content{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  line-height: 5vh;
+}
+
+video{
+  object-fit: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.2)
+}
+
+
+/* ROOT CSS */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  text-align: center; 
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container{
+  
+  height: 100%;
+  width: 100%;
+}
+
+.breeze{
+
+  height: 100%;
+  width: 100%;
+}
+
+.navigation-bar{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
