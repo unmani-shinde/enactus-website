@@ -1,29 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
-* {
+/* NAVIGATION CSS */
+
+.enactus-navbar {  
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  align-items: center;
+  background-color: inherit;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  z-index: 12;
+  height: 10%;
+  margin-top: -1vh;
+}
+
+.enactus-navbar-options {
+  text-decoration: none;  
+  background-color: transparent;
+  border: none;
+  font-size: 1.35vw;
+  font-weight: 700;
+  margin-right: 4vw;
+  margin-top: 2vh;
+  letter-spacing: 0.05rem;
+  position: relative; 
+}
+.enactus-navbar-options::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 4vh;
+  height: 4px;
+  background-color: #FEC415; 
+  cursor: pointer;
+  bottom: 0; 
+  left: 0;
+  transition: width 0.3s; 
+}
+.enactus-navbar-options:hover::after {
+  width: 100%;
+}
+.enactus-navbar li {
+  list-style: none;
+}
+
+
+
+
+/* PROJECTS PAGE CSS */
+
+.enactus-heading{
+  font-size: 11.5vw;
+  font-weight: 700;
+  z-index: 400;
+  color: white;
+  position: relative;
+  letter-spacing: -0.5vw;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  
+}
+
+.homepage-fade-in-animation{
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.home-container{
+  /* background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%); */
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+
+}
+.home-content{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  line-height: 5vh;
+}
+video{
+  object-fit: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.2)
+}
+
+
+/* ROOT CSS */
+*{
   font-family: 'Poppins', sans-serif;
 }
-
 .App {
-  text-align: center;
-  box-sizing: border-box;
+  text-align: center; 
   height: 100vh;
   width: 100vw;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
-
-/* Style the scrollbar track */
-::-webkit-scrollbar {
-  width: 8px; /* Set the width of the scrollbar */
+.container{
+  
+  height: 100%;
+  width: 100%;
+}
+.breeze{
+  height: 100%;
+  width: 100%;
 }
 
-/* Style the scrollbar thumb (the draggable part) */
-::-webkit-scrollbar-thumb {
-  background: #F4E869; /* Color of the thumb */
-  border-radius: 0px; /* Rounded corners for the thumb */
+.navigation-bar{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  align-self: center;
 }
 
-/* Style the scrollbar track when the thumb is being hovered */
-::-webkit-scrollbar-thumb:hover {
-  background: #F4E869;
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
+

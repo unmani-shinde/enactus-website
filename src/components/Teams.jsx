@@ -6,7 +6,7 @@ import "../stylesheets/HomeStyle.css";
 
 function Teams() {
 
-    const {inView, entry, ref} = useInView();
+    const {inView, ref} = useInView();
     const revealTeams = useAnimation();
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { delay, motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Eklavya from "../assets/2.png";
@@ -13,7 +13,7 @@ function Card({children,childNumber,projectDescription,image,url}) {
 
   const nav = useNavigate();
 
-    const {inView,entry,ref} = useInView();
+    const {inView,ref} = useInView();
     const revealCard = useAnimation();
     const [imageScale,setImageScale] = useState(0.8);
     const [underline,setUnderline] = useState(-1);
@@ -78,7 +78,7 @@ function Card({children,childNumber,projectDescription,image,url}) {
 </button>
 
   <div className='image-container'style={{ width: '30vh', height: '25vh', marginTop: '-10vh', border: 'solid 1px transparent', borderRadius: '50%', marginRight: '4vw',zIndex:'4',transform:`scale(${imageScale})` }}>
-      <img className="image" src={image} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', }} />
+      <img alt="meow" className="image" src={image} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%', }} />
     </div>
 
  
@@ -103,7 +103,7 @@ function Card({children,childNumber,projectDescription,image,url}) {
 
 function Projects() {
 
-    const {inView, entry, ref} = useInView();
+    const {inView, ref} = useInView();
     const revealProjects = useAnimation();
 
     const projects=[

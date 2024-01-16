@@ -1,20 +1,20 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect } from "react";
 import "../stylesheets/HomeStyle.css";
 import EnactusTeam2 from "../assets/EnactusTeam.jpg";
-import { motion, useAnimation, useScroll } from "framer-motion";
+import { motion, useAnimation} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Projects from "../components/Projects";
 import Introduction from "../components/Introduction";
 import Teams from "../components/Teams";
-import EnactusNavBar from "../components/NavBar";
+import EnactusNavBar from "../components/NavigationBar";
 // import Navbar from "../components/NavigationBar";
 
 
 function EnactusHome2() {
 
 
-  const {inView, entry, ref} = useInView();
-  const {scrollY} = useScroll();
+  const {inView,  ref} = useInView();
+  // const {scrollY} = useScroll();
 
 
   const revealControl = useAnimation();

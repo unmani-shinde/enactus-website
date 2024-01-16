@@ -6,7 +6,7 @@ import "../stylesheets/HomeStyle.css";
 
 function Introduction() {
 
-    const {inView, entry, ref} = useInView();
+    const {inView, ref} = useInView();
     const revealIntroduction = useAnimation();
 
 

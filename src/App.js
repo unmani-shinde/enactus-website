@@ -1,21 +1,19 @@
 import './App.css';
-// import EnactusHome from './pages/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import EnactusNavBar from './components/NavBar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Projects from './pages/Projects';
+import NavigationBar from './components/NavigationBar';
 import EnactusHome2 from './pages/Home2';
-import Tatpar from './pages/Tatpar';
 
 function App() {
-  return (  
-
-    <div className="App">      
+  return (
+    <div className="App" >
       <Router>
-        {/* <EnactusNavBar/> */}
         <Routes>
-          <Route path="/" element={<EnactusHome2/> } />
-          <Route path="/tatpar" element={<Tatpar/>} />
+          <Route path='/' element={<EnactusHome2/>}></Route>
+          <Route path='/projects' element={<Projects/>}></Route>
+          <Route path='/navigation' element={<NavigationBar/>}></Route>
         </Routes>
-      </Router>            
+      </Router>
     </div>
   );
 }
