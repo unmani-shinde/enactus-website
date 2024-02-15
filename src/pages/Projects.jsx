@@ -3,6 +3,8 @@ import React from "react";
 import BackgroundVideo from '../assets/background_video.mp4';
 import NavigationBar from "../components/NavigationBar";
 import "../stylesheets/scroll.css";
+import Project from "../components/ProjectsPage/Project";
+
 // import { Parallax } from 'react-parallax';
 // import BackgroundImage from "../assets/meow.png";
 
@@ -67,6 +69,7 @@ function Projects() {
     
     {/* <div className="container">mewo</div> */}
 
+<div><Project/></div>
 
     </div>
     
