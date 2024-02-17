@@ -29,6 +29,7 @@ function Projects() {
 
 
   return (
+    <>
     <div className="breeze" style={{backgroundAttachment:'fixed'}}>
         <NavigationBar/>
         <div className="container home-container" style={{backgroundAttachment:'fixed'}}>
@@ -69,10 +70,11 @@ function Projects() {
     
     {/* <div className="container">mewo</div> */}
 
-<div><Project/></div>
+    
 
     </div>
-    
+    <div><Project/></div>
+    </>
   );
 }
 

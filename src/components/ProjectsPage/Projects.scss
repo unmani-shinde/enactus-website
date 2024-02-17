@@ -1,4 +1,7 @@
-/* Projects.css */
+/* Projects.scss */
+.fullPageSection {
+  height: 100vh;
+}
 
 .portfolio {
   position: relative;
@@ -10,11 +13,12 @@
     padding-top: 50px;
     text-align: center;
     color: orange;
+    background-color: white;
     font-size: 36px;
 
     .progressBar {
       height: 10px;
-      background-color: #FEC415;
+      background-color: #fec415;
     }
   }
 
