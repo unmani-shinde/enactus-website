@@ -1,7 +1,7 @@
-// project.jsx
 import React, { useRef } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, useViewportScroll, useTransform } from "framer-motion";
 import "./Projects.scss";
+import Carousel from "./Carousel";
 
 const items = [
   {
@@ -68,18 +68,23 @@ const Project = () => {
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 80,
-    output: [1, 0]
+    output: [0, 1]
   });
+
+  const leftWidth = useTransform(scaleX, [0, 0.5], [0, 100]);
+  const rightWidth = useTransform(scaleX, [0.5, 1], [0, 100]);
 
   return (
     <div className="portfolio" ref={ref}>
       <motion.div className="progress">
         <h1>Projects By Enactus</h1>
-        <motion.div style={{ scaleX: scaleX }} className="progressBar"></motion.div>
+        <div className="progressBarContainer">
+          <motion.div style={{ width: leftWidth }} className="progressBarLeft" />
+          <motion.div style={{ width: rightWidth }} className="progressBarRight" />
+        </div>
       </motion.div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
-      ))}
+      <Carousel data={items}/>
+      
     </div>
   );
 };

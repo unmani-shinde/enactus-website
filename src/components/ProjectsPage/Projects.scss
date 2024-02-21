@@ -3,6 +3,7 @@
   height: 100vh;
 }
 
+
 .portfolio {
   position: relative;
 
@@ -15,10 +16,14 @@
     color: orange;
     background-color: white;
     font-size: 36px;
+    z-index: 3; /* Ensure progress bar is above other content */
+    width: 100%; /* Ensure progress bar spans the entire width */
+    margin-top: 20px; /* Add margin to create a fixed distance between the carousel and progress bar */
 
     .progressBar {
       height: 10px;
       background-color: #fec415;
+      width: 100%; /* Ensure progress bar spans the entire width */
     }
   }
 
@@ -29,6 +34,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-bottom: 20px; /* Add margin to create a fixed distance between the carousel and progress bar */
 
     .wrapper {
       max-width: 1366px;
@@ -38,6 +44,7 @@
       align-items: center;
       justify-content: center;
       gap: 50px;
+      position: relative; /* Ensure wrapper creates a new stacking context */
 
       .imageContainer {
         flex: 1;
