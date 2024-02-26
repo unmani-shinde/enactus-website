@@ -1,4 +1,8 @@
 /* For Webkit browsers (Chrome, Safari) */
+body {
+  margin: 0;
+  padding: 0;
+}
 ::-webkit-scrollbar {
     width: 12px; /* Set width of the scrollbar */
   }

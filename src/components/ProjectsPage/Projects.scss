@@ -1,32 +1,17 @@
-/* Projects.scss */
-.fullPageSection {
-  height: 100vh;
-}
-
 
 .portfolio {
+  background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
   position: relative;
-
-  .progress {
-    position: sticky;
-    top: 0;
-    left: 0;
-    padding-top: 50px;
-    text-align: center;
-    color: orange;
-    background-color: white;
-    font-size: 36px;
-    z-index: 3; /* Ensure progress bar is above other content */
-    width: 100%; /* Ensure progress bar spans the entire width */
-    margin-top: 20px; /* Add margin to create a fixed distance between the carousel and progress bar */
-
-    .progressBar {
-      height: 10px;
-      background-color: #fec415;
-      width: 100%; /* Ensure progress bar spans the entire width */
-    }
+  margin-top: 0; /* Remove any top margin */
+  padding-top: 0; /* Remove any top padding */
+  
+.partition {
+    width: 2px; /* Adjust the width as needed */
+    background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%); /* Change the color as needed */
+    height: 80%; /* Adjust the height as needed */
+    margin: auto; /* Center the partition horizontally */
   }
-
+  
   .container {
     display: flex;
     align-items: center;
@@ -49,6 +34,10 @@
       .imageContainer {
         flex: 1;
         height: 50%;
+        align-self: center;
+        padding-left: 10px; /* Add padding to the left side */
+        padding-right: 10px; /* Add padding to the right side */
+      
 
         img {
           width: 100%;
@@ -73,7 +62,7 @@
         }
 
         button {
-          background-color: orange;
+          background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
           border: none;
           border-radius: 10px;
           padding: 10px;

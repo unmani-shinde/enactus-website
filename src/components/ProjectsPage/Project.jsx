@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useSpring, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import "./Projects.scss";
+import { useInView } from "react-intersection-observer";
 import Carousel from "./Carousel";
+import "../../stylesheets/HomeStyle.css"
 
+// Original items
 const items = [
   {
     id: 1,
-    title: "Project Nirmal",
+    title: "",
     img: "https://static.toiimg.com/thumb/imgsize-23456,msid-76984731,width-600,resizemode-4/76984731.jpg",
     desc: "Foot Operated Door Opener {FODO}, A Product designed to reduce possibilities of the Corona Virus outbreak."
   },
@@ -27,64 +30,92 @@ const items = [
   },
 ];
 
-const Single = ({ item }) => {
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"]
-  });
+// Additional items for Project Tatpar
+const items2 = [
+  // Add your items for Project Tatpar here
+];
 
-  const y = useSpring(scrollYProgress, {
-    range: [0, 1],
-    output: [-300, 300]
-  });
-
-  return (
-    <section ref={ref} className="fullPageSection">
-      <div className="container">
-        <div className="wrapper">
-          <div className="imageContainer">
-            <img src={item.img} alt="" />
-          </div>
-
-          <motion.div className="textContainer" style={{ y }}>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
-            <button>View Report</button>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
+// Additional items for Project Eklavya
+const items3 = [
+  // Add your items for Project Eklavya here
+];
 
 const Project = () => {
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"]
-  });
+  const { ref, inView } = useInView();
+  const animationControls = useAnimation();
 
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 80,
-    output: [0, 1]
-  });
-
-  const leftWidth = useTransform(scaleX, [0, 0.5], [0, 100]);
-  const rightWidth = useTransform(scaleX, [0.5, 1], [0, 100]);
+  // Animation trigger when inView changes
+  React.useEffect(() => {
+    if (inView) {
+      animationControls.start({
+        opacity: 1,
+        scale: 1,
+        transition: {
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01]
+        }
+      });
+    }
+  }, [inView, animationControls]);
 
   return (
-    <div className="portfolio" ref={ref}>
-      <motion.div className="progress">
-        <h1>Projects By Enactus</h1>
-        <div className="progressBarContainer">
-          <motion.div style={{ width: leftWidth }} className="progressBarLeft" />
-          <motion.div style={{ width: rightWidth }} className="progressBarRight" />
+    <div className="portfolio">
+      <div ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.8,
+            ease: [0, 0.71, 0.2, 1.01]
+          }}
+        >
+          <br></br><br></br> <br></br><br></br><br></br>
+          <p className="enactus-projects-heading">Project Nirmal</p>
+        </motion.div>
+      </div>
+      <div className="fullPageSection">
+        <Carousel data={items}/>
+      </div>
+      <div className="portfolio">
+        <div ref={ref}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.8,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          >
+            <br></br><br></br> <br></br><br></br><br></br>
+            <p className="enactus-projects-heading">Project Tatpar</p>
+          </motion.div>
         </div>
-      </motion.div>
-      <Carousel data={items}/>
-      
+        <div className="fullPageSection">
+          <Carousel data={items2}/>
+        </div>
+      </div>
+      <div className="portfolio">
+        <div ref={ref}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.8,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          >
+            <br></br><br></br> <br></br><br></br><br></br>
+            <p className="enactus-projects-heading">Project Eklavya</p>
+          </motion.div>
+        </div>
+        <div className="fullPageSection">
+          <Carousel data={items3}/>
+        </div>
+      </div>
     </div>
   );
 };

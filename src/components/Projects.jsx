@@ -125,7 +125,7 @@ function Projects() {
       }
 
     return(
-        <div ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "0.5vw", display: 'flex', flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',marginTop:"-4.5vh",background: 'linear-gradient(315deg, #f7d4d4 0%, #f6ecc4 74%)'}}>
+        <div ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "0.5vw", display: 'flex', flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',marginTop:"-4.5vh",background: 'linear-gradient(315deg, #f7d4d4 0%, #f6ecc4 74%)',margin:0}}>
 
             <motion.div initial={{opacity:0}} animate={revealProjects} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', width: '100%', }}>
             <p style={{ fontWeight: "700", fontSize: '3vw', marginBottom: "2vh", lineHeight: "4vw", textAlign: 'center',letterSpacing:'0.5vw',marginTop:"12vh"}}>PROJECTS</p>  
