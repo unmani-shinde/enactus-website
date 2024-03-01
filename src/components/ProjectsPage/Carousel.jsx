@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./Carousel.css";
 
-const Carousel = ({ data, showArrows = true }) => {
+const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);
 
   // Function to go to the next slide
@@ -23,15 +23,13 @@ const Carousel = ({ data, showArrows = true }) => {
 
     // Cleanup function to clear interval on component unmount
     return () => clearInterval(intervalId);
-  }, [slide]); // Re-run effect when slide changes
+  }, [slide, data.length]); // Re-run effect when slide or data length changes
 
   return (
     <div className="carousel-container">
-      {showArrows && (
-        <div className="arrow-container left">
-          <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
-        </div>
-      )}
+      <div className="arrow-container left">
+        <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      </div>
       <div className="carousel">
         {data.map((item, idx) => (
           <Single item={item} key={item.id} isActive={slide === idx} />
@@ -46,11 +44,9 @@ const Carousel = ({ data, showArrows = true }) => {
           ))}
         </span>
       </div>
-      {showArrows && (
-        <div className="arrow-container right">
-          <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" />
-        </div>
-      )}
+      <div className="arrow-container right">
+        <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" />
+      </div>
     </div>
   );
 };
@@ -61,6 +57,7 @@ const Single = ({ item, isActive }) => {
       <div className="imageContainer">
         <img src={item.img} alt={item.title} />
       </div>
+      <div className="partition"></div>
       <div className="textContainer">
         <h1>{item.title}</h1>
         <p>{item.desc}</p>

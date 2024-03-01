@@ -1,11 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import "./Projects.scss";
 import { useInView } from "react-intersection-observer";
 import Carousel from "./Carousel";
-import "../../stylesheets/HomeStyle.css"
+import "../../stylesheets/HomeStyle.css";
 
-// Original items
 const items = [
   {
     id: 1,
@@ -30,17 +28,7 @@ const items = [
   },
 ];
 
-// Additional items for Project Tatpar
-const items2 = [
-  // Add your items for Project Tatpar here
-];
-
-// Additional items for Project Eklavya
-const items3 = [
-  // Add your items for Project Eklavya here
-];
-
-const Project = () => {
+const ProjectTatpar = ({ showArrows }) => {
   const { ref, inView } = useInView();
   const animationControls = useAnimation();
 
@@ -60,64 +48,27 @@ const Project = () => {
   }, [inView, animationControls]);
 
   return (
-    <div className="portfolio">
+    <div className="portfolioTatpar">
       <div ref={ref}>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 0.8,
+            duration: 1.1,
             delay: 0.8,
             ease: [0, 0.71, 0.2, 1.01]
           }}
         >
-          <br></br><br></br> <br></br><br></br><br></br>
-          <p className="enactus-projects-heading">Project Nirmal</p>
+          <br></br>
+          <p className="enactus-projects-heading-tatpar">Project Tatpar</p>
         </motion.div>
       </div>
+      
       <div className="fullPageSection">
-        <Carousel data={items}/>
-      </div>
-      <div className="portfolio">
-        <div ref={ref}>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.8,
-              ease: [0, 0.71, 0.2, 1.01]
-            }}
-          >
-            <br></br><br></br> <br></br><br></br><br></br>
-            <p className="enactus-projects-heading">Project Tatpar</p>
-          </motion.div>
-        </div>
-        <div className="fullPageSection">
-          <Carousel data={items2}/>
-        </div>
-      </div>
-      <div className="portfolio">
-        <div ref={ref}>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.8,
-              ease: [0, 0.71, 0.2, 1.01]
-            }}
-          >
-            <br></br><br></br> <br></br><br></br><br></br>
-            <p className="enactus-projects-heading">Project Eklavya</p>
-          </motion.div>
-        </div>
-        <div className="fullPageSection">
-          <Carousel data={items3}/>
-        </div>
-      </div>
+        <Carousel data={items} showArrows={showArrows}/>
+      </div><br/><br /><br /><br />
     </div>
   );
 };
 
-export default Project;
+export default ProjectTatpar;

@@ -2,7 +2,9 @@ import React from "react";
 import BackgroundVideo from '../assets/background_video.mp4';
 import NavigationBar from "../components/NavigationBar";
 import "../stylesheets/scroll.css";
-import Project from "../components/ProjectsPage/Project";
+import ProjectNirmal from "../components/ProjectsPage/ProjectNirmal";
+import ProjectTatpar from "../components/ProjectsPage/ProjectTatpar";
+import ProjectEklavya from "../components/ProjectsPage/ProjectEklavya";
 
 function Projects() {
   return (
@@ -19,7 +21,9 @@ function Projects() {
             <p className='homepage-fade-in-animation' style={{ zIndex: '400', color: 'white', fontSize: '2vw', marginTop: "-8vh", fontWeight: '400' }}>A preview of the projects undertaken with <b>Enactus India</b>'s Support and Business Advisory from <b>SPIT</b>.</p>
           </div>
         </div>
-        <div style={{marigin:0}}><Project /></div>
+        <div ><ProjectNirmal showArrows={true} /> </div>
+        <div><ProjectTatpar showArrows={true} /></div>
+        <div><ProjectEklavya showArrows={true} /></div>
       </div>
     </>
   );
