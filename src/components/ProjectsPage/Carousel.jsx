@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./Carousel.css";
 
-const Carousel = ({ data, showArrows = true }) => {
+const Carousel = ({ data}) => {
   const [slide, setSlide] = useState(0);
+  const [showArrows,setShowArrows] = useState(true);
 
   // Function to go to the next slide
   const nextSlide = () => {

@@ -60,6 +60,8 @@ const Project = () => {
   }, [inView, animationControls]);
 
   return (
+
+    <div>
     <div className="portfolio">
       <div ref={ref}>
         <motion.div
@@ -78,6 +80,9 @@ const Project = () => {
       <div className="fullPageSection">
         <Carousel data={items}/>
       </div>
+    </div>
+
+
       <div className="portfolio">
         <div ref={ref}>
           <motion.div
@@ -97,6 +102,9 @@ const Project = () => {
           <Carousel data={items2}/>
         </div>
       </div>
+
+
+
       <div className="portfolio">
         <div ref={ref}>
           <motion.div
@@ -116,6 +124,8 @@ const Project = () => {
           <Carousel data={items3}/>
         </div>
       </div>
+
+
     </div>
   );
 };
