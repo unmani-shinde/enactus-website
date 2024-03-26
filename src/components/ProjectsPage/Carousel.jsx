@@ -4,6 +4,7 @@ import "./Carousel.css";
 
 const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);
+  const [showArrows,setShowArrows] = useState(true);
 
   // Function to go to the next slide
   const nextSlide = () => {
