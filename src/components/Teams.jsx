@@ -1,6 +1,6 @@
 import React from "react";
 
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import core1 from "../assets/core1.jpg";
 import core2 from "../assets/core2.jpg";
@@ -60,10 +60,10 @@ function Teams() {
       
         <div className="teams" ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "2vw", display: 'flex',flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',}}>
 
-        <motion.div initial={{opacity:0}} animate={revealTeams}>
+      
         <p style={{ fontWeight: "700", fontSize: '3vw', marginBottom: "2vh", lineHeight: "4vw", textAlign: 'center',letterSpacing:'0.5vw',marginTop:"12vh"}}>Our Team</p>
         
-        </motion.div>
+        
         <div className="responsive-container-block container">
         
  
