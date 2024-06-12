@@ -20,6 +20,7 @@ import techHead2 from "../assets/techhead2.jpg";
 import techHead3 from "../assets/techhead3.jpg";
 import vicePresidentImage from "../assets/vicepresident.jpg";
 import "../stylesheets/teams.css";
+import EnactusNavBar from "./NavigationBar";
 
 function Teams() {
 
@@ -37,6 +38,26 @@ function Teams() {
       }
 
     return(
+
+    <div>
+     <div
+      style={{
+        height: "100%",
+        overflowX: "hidden",
+        overflowY: "scroll",
+        alignSelf: "center",
+        alignItems: "center",
+        backgroundColor:"black"
+      }}
+    >
+      <EnactusNavBar />
+
+     
+      </div>
+
+    
+
+      
         <div className="teams" ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "2vw", display: 'flex',flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',}}>
 
         <motion.div initial={{opacity:0}} animate={revealTeams}>
@@ -371,6 +392,8 @@ function Teams() {
         
         
         
+        </div>
+
         </div>
         
 
