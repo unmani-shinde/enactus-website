@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import { FaHome } from "react-icons/fa";
 
@@ -27,7 +27,7 @@ function NavigationBar() {
 	window.addEventListener("scroll", changeColor);
 
     return (
-        <div style={{ width: "100%", backgroundColor:color?"yellow":'transparent',display:'flex',flexDirection:'column' }}>
+        <div style={{ width: "100%", backgroundColor:color?"yellow":'black',display:'flex',flexDirection:'column' }}>
 
             <ul style={{ backgroundColor: 'inherit' }} className='enactus-navbar'>
                 {navButtons.map((navButton, index) => (
