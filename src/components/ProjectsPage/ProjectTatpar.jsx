@@ -3,28 +3,41 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Carousel from "./Carousel";
 import "../../stylesheets/HomeStyle.css";
-
+import "../../assets/1.png"
 const items = [
   {
     id: 1,
-    title: "",
-    img: "https://static.toiimg.com/thumb/imgsize-23456,msid-76984731,width-600,resizemode-4/76984731.jpg",
-    desc: "Foot Operated Door Opener {FODO}, A Product designed to reduce possibilities of the Corona Virus outbreak."
+    title: "About",
+    img: 'https://github.com/enactusvjti/EnactusVJTI_Website/blob/main/assets/images/Tatpar.png?raw=true',
+    desc: "In a groundbreaking move to revolutionize express delivery services, we're leveraging Mumbai's iconic Dabbawala network. Inspired by their legendary efficiency, we're extending their logistics prowess to offer cost-effective delivery solutions. Recognizing the exorbitant rates prevalent in the market, our mission is to democratize access to swift deliveries. By harnessing the existing infrastructure and workforce of the Dabbawalas, we're drastically reducing transportation and manpower costs. This innovative approach not only ensures affordability for customers but also enables Dabbawalas to generate sustainable income. Through this strategic alliance, we're not just redefining the delivery landscape but also empowering local communities with economic opportunities.",
+  pdf:"https://drive.google.com/file/d/18NSkg3tHA6GTEi6KN3JH9WXhgiUUIXUj/view?usp=sharing",
   },
   {
     id: 2,
+    img:"https://img.redbull.com/images/q_auto,f_auto/redbullcom/2022/8/4/xdrte2pjyp2b0bzciked/dabbawalas-mumbai",
     title: "Purpose",
-    desc: "One of the products in the project Nirmal is foot operated door opener.The public places like public toilets, schools, colleges are the most vulnerable places for the spread of the pandemic because thousands of people touch the same door handles leading to transmission of viruses in the community rapidly. So, the FODO has become the necessity of the human kind. It is easy to use and affordable to the people."
+    desc: "Our purpose is to transform express delivery services by harnessing Mumbai's renowned Dabbawala network. Inspired by their unparalleled efficiency, we aim to provide affordable delivery solutions to all. By leveraging the Dabbawalas' infrastructure and workforce, we minimize costs while maximizing accessibility. Our mission is clear: democratize swift deliveries and empower communities. Together, we're not just redefining the delivery landscape; we're creating economic opportunities and making a meaningful impact on society.",
+    pdf:"https://drive.google.com/file/d/18NSkg3tHA6GTEi6KN3JH9WXhgiUUIXUj/view?usp=sharing",
   },
   {
     id: 3,
-    title: "Product Specification",
-    desc: "Model name: Foot Operated Door Opener (FODO) \n Install- Door mounted at bottom Corner \n Waterproof, no Electronic component involved \n Waterproof, no Electronic component involved"
+    img:"https://img.redbull.com/images/q_auto,f_auto/redbullcom/2022/8/4/ikl4kaca6ieuy7q7kb4w/dabbawalas-mumbai",
+    title: "Impact",
+    desc: "Our vision is to empower over 5000 Dabbawalas, granting them additional income and newfound independence. Through this initiative, we're not only bolstering their financial security but also preserving their traditional business model. With our support, they'll rise stronger, standing tall as pillars of their communities. Together, we're not just transforming lives; we're safeguarding legacies and fostering resilience in the face of change.",
+    pdf:"https://drive.google.com/file/d/18NSkg3tHA6GTEi6KN3JH9WXhgiUUIXUj/view?usp=sharing",
   },
   {
     id: 4,
-    title: "Project Nirmal",
-    desc: "Foot Operated Door Opener {FODO}, A Product designed to reduce possibilities of the Corona Virus outbreak."
+    img:"https://img.redbull.com/images/q_auto,f_auto/redbullcom/2022/8/4/rmvucvp6roxdictft2zc/dabbawalas-mumbai",
+    title: "Employment",
+    desc: "By integrating new faces from rural areas into our chain, we're not just expanding our workforce, but also fostering inclusivity and empowering local communities. Our mission is to drive down the exorbitant costs of express delivery in Mumbai, making it accessible to all. This initiative not only enhances efficiency but also uplifts the standard of living for countless individuals. Embracing the traditional Dabbawala transport system, powered by bicycles and local electric trains, we're not just delivering packages; we're preserving our environment and paving the way for sustainable logistics solutions. Together, we're revolutionizing the delivery landscape, one eco-friendly mile at a time.",
+    pdf:"https://drive.google.com/file/d/18NSkg3tHA6GTEi6KN3JH9WXhgiUUIXUj/view?usp=sharing",
+  },{
+    id: 5,
+    img:"https://github.com/enactusvjti/EnactusVJTI_Website/blob/main/assets/images/IMG_20191019_182634.jpg?raw=true",
+    title: "Our Work",
+    desc: "Our Meet With Mumbai Dabbawala",
+    pdf:"https://drive.google.com/file/d/18NSkg3tHA6GTEi6KN3JH9WXhgiUUIXUj/view?usp=sharing",
   },
 ];
 
@@ -60,7 +73,7 @@ const ProjectTatpar = ({ showArrows }) => {
           }}
         >
           <br></br>
-          <p className="enactus-projects-heading-tatpar">Project Tatpar</p>
+          <p className="enactus-projects-heading">Project Tatpar</p>
         </motion.div>
       </div>
       

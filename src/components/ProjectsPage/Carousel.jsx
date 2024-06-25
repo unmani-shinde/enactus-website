@@ -29,7 +29,7 @@ const Carousel = ({ data }) => {
   return (
     <div className="carousel-container">
       <div className="arrow-container left">
-        <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+        {/* <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" /> */}
       </div>
       <div className="carousel">
         {data.map((item, idx) => (
@@ -46,7 +46,7 @@ const Carousel = ({ data }) => {
         </span>
       </div>
       <div className="arrow-container right">
-        <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" />
+        {/* <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" /> */}
       </div>
     </div>
   );
@@ -62,7 +62,11 @@ const Single = ({ item, isActive }) => {
       <div className="textContainer">
         <h1>{item.title}</h1>
         <p>{item.desc}</p>
-        <button>View Report</button>
+        {item.pdf && (
+          <a href={item.pdf} target="_blank" rel="noopener noreferrer">
+            <button>View Report</button>
+          </a>
+        )}
       </div>
     </div>
   );
