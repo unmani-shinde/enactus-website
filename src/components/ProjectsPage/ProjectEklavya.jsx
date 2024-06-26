@@ -68,7 +68,7 @@ const ProjectEklavya = ({ showArrows }) => {
           }}
         >
           <br></br>
-          <p className="enactus-projects-heading">Project Eklavya</p>
+          <p className="enactus-projects-heading uppercase tracking-wider">Project Eklavya</p>
         </motion.div>
       </div>
       

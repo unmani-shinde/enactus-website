@@ -9,7 +9,7 @@ const items = [
     id: 1,
     title: "About",
     img: "https://github.com/enactusvjti/EnactusVJTI_Website/blob/main/assets/images/Nirmal.png?raw=true",
-    desc: "The Foot Operated Door Opener (FODO) presents a comprehensive solution to mitigate the spread of the coronavirus while addressing various socio-economic and environmental challenges. By allowing individuals to open doors with their feet, FODO significantly reduces the risk of virus transmission, particularly in high-traffic areas. Moreover, its implementation helps in curbing waste by eliminating the need for disposable paper towels and contributes to environmental sustainability by minimizing carbon footprint. In regions like India, where sanitation-related diseases incur substantial expenses and affect marginalized communities disproportionately, FODO offers a cost-effective measure to alleviate financial burdens and promote public health. Furthermore, through the production and distribution of FODO units, it creates employment opportunities, particularly benefiting daily wage workers impacted by the economic ramifications of the COVID-19 pandemic. Thus, FODO emerges as a pivotal tool in promoting both public health and sustainable development on a global scale.",
+    desc: "The Foot Operated Door Opener (FODO) presents a comprehensive solution to mitigate the spread of the coronavirus while addressing various socio-economic and environmental challenges. By allowing individuals to open doors with their feet, FODO significantly reduces the risk of virus transmission, particularly in high-traffic areas. Moreover, its implementation helps in curbing waste by eliminating the need for disposable paper towels and contributes to environmental sustainability by minimizing carbon footprint. In regions like India, where sanitation-related diseases incur substantial expenses and affect marginalized communities disproportionately, FODO offers a cost-effective measure to alleviate financial burdens and promote public health. Furthermore, through the production and distribution of FODO units, it creates employment opportunities, particularly benefiting daily wage workers impacted by the economic ramifications of the COVID-19 pandemic.",
   pdf:"https://drive.google.com/file/d/1ORkfgKj6ZW2HJP7hYD9glNmPjNf1YDGN/view?usp=sharing",
   },
   {
@@ -75,7 +75,7 @@ const ProjectNirmal = ({ showArrows }) => {
           }}
         >
           <br></br>
-          <p className="enactus-projects-heading">Project Nirmal</p>
+          <p className="enactus-projects-heading uppercase tracking-wider">Project Nirmal</p>
         </motion.div>
       </div>
       

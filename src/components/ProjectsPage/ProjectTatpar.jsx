@@ -73,7 +73,7 @@ const ProjectTatpar = ({ showArrows }) => {
           }}
         >
           <br></br>
-          <p className="enactus-projects-heading">Project Tatpar</p>
+          <p className="enactus-projects-heading uppercase tracking-wider">Project Tatpar</p>
         </motion.div>
       </div>
       

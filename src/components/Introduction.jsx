@@ -20,12 +20,12 @@ function Introduction() {
       }
 
     return(
-        <div ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "2vw", display: 'flex',flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',backgroundColor:"#FFF6F6"}}>
+        <div style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "2vw", display: 'flex',flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',backgroundColor:"#FFF6F6"}}>
 
-        <motion.div initial={{opacity:0}} animate={revealIntroduction}>
-        <p style={{ fontWeight: "700", fontSize: '3vw',marginTop:'15vh', marginBottom: "-2vh", lineHeight: "4vw", maxWidth: '50%',marginLeft:'3vw', textAlign: 'left',letterSpacing:'0.25vh',color:'#FFC436'}}>Entrepreneurial action & business innovation that creates social impact.</p>
         
-        </motion.div>
+        <p className="transition-opacity ease-in duration-700 opacity-100" style={{ fontWeight: "700", fontSize: '3vw',marginTop:'15vh', marginBottom: "-2vh", lineHeight: "4vw", maxWidth: '50%',marginLeft:'3vw', textAlign: 'left',letterSpacing:'0.25vh',color:'#FFC436'}}>Entrepreneurial action & business innovation that creates social impact.</p>
+        
+       
           
         
         

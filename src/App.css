@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
 /* NAVIGATION CSS */
-body {
-  margin: 0;
-  padding: 0;
-}
+
 .enactus-navbar {  
   display: flex;
   flex-direction: row;
@@ -20,14 +17,10 @@ body {
 }
 
 .enactus-navbar-options {
-  text-decoration: none;  
-  background-color: transparent;
-  border: none;
-  font-size: 1.35vw;
+
+  /* font-size: 1.35vw;
   font-weight: 700;
-  margin-right: 4vw;
-  margin-top: 2vh;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05rem; */
   position: relative; 
 }
 .enactus-navbar-options::after {
@@ -55,13 +48,8 @@ body {
 /* PROJECTS PAGE CSS */
 
 .enactus-heading{
-  font-size: 11.5vw;
-  font-weight: 700;
+  
   z-index: 400;
-  color: white;
-  position: relative;
-  letter-spacing: -0.5vw;
-  text-align: center;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
   
 }
@@ -84,9 +72,8 @@ body {
 
 }
 .home-content{
-  display: flex;
-  width: 50%;
-  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   line-height: 5vh;
 }
 video{
@@ -117,7 +104,7 @@ video{
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .container{
   
@@ -137,6 +124,62 @@ video{
   text-align: center;
   align-items: center;
   align-self: center;
+}
+
+@media (min-width: 285px) and (max-width: 640px) {
+  .enactus-heading{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .second-hero{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+ 
+
+}
+
+.cookie:hover .project-card * {
+  color: black !important;
+  z-index: 30!important;
+}
+
+
+
+@media (max-width:220px) {
+  .enactus-heading{
+    font-size: 2rem;
+  }
+  .second-hero{
+    font-size: 1.5rem;
+    line-height:1.5rem;
+  }
+  
+}
+
+@media (max-width:385px) {
+  .second-subheading {
+    font-size: 0.75rem;
+  }
+  
+}
+
+
+@media (max-width: 865px) {
+  .meow{
+    display: none;
+  }
+}
+
+@media(min-width:865px){
+  .meow{
+    display: flex;
+    flex-direction: row;
+  }
+  .accordion{
+    display:none;
+  }
+
 }
 
 @keyframes fadeInAnimation {

@@ -47,7 +47,7 @@ function Teams() {
         overflowY: "scroll",
         alignSelf: "center",
         alignItems: "center",
-        backgroundColor:"black"
+        backgroundColor:"white"
       }}
     >
       <EnactusNavBar />

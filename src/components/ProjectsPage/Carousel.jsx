@@ -27,7 +27,7 @@ const Carousel = ({ data }) => {
   }, [slide, data.length]); // Re-run effect when slide or data length changes
 
   return (
-    <div className="carousel-container">
+    <div className="h-screen">
       <div className="arrow-container left">
         {/* <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" /> */}
       </div>
@@ -55,18 +55,22 @@ const Carousel = ({ data }) => {
 const Single = ({ item, isActive }) => {
   return (
     <div className={isActive ? "slide" : "slide slide-hidden"}>
-      <div className="imageContainer">
-        <img src={item.img} alt={item.title} />
-      </div>
-      <div className="partition"></div>
-      <div className="textContainer">
-        <h1>{item.title}</h1>
-        <p>{item.desc}</p>
-        {item.pdf && (
-          <a href={item.pdf} target="_blank" rel="noopener noreferrer">
-            <button>View Report</button>
-          </a>
-        )}
+      {/* For small screens, imageContainer above textContainer */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center sm:gap-8">
+        
+        <div className="imageContainer mb-4 sm:mb-0 sm:order-1">
+          <img src={item.img} alt={item.title} />
+        </div>
+        
+        <div className="textContainer sm:order-0 sm:text-md">
+          <h1 className="font-bold text-2xl">{item.title}</h1>
+          <p>{item.desc}</p>
+          {item.pdf && (
+            <a href={item.pdf} target="_blank" rel="noopener noreferrer">
+              <button>View Report</button>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
