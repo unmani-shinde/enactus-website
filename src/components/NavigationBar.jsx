@@ -38,7 +38,7 @@ function NavigationBar() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="text-white h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div className="bg-transparent hidden lg:flex md:flex lg:gap-x-12 md:gap-x-12">
@@ -68,7 +68,7 @@ function NavigationBar() {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -82,7 +82,7 @@ function NavigationBar() {
                     <a
                       key={item.name}
                       href={item.link}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base text-white font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base text-white font-semibold leading-7 text-gray-900 hover:bg-gray-500"
                     >
                       {item.name}
                     </a>
