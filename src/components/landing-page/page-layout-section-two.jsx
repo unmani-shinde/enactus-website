@@ -61,15 +61,17 @@ export function SecondSubHeading(){
                 sustainable world.{" "}
               </p>
 
-              <button
-                className="border-2 border-white rounded-full p-4 text-white font-bold second-subheading lg:text-2xl w-128 tracking-wider"
-                onClick={(e) => {
-                  e.preventDefault();
-                  console.log("Scroll Progress: ", window.scrollY);
-                }}
+              <div className="mt-10 w-5/12 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="w-full rounded-md border-2 border-white bg-transparent px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
               >
-                KNOW MORE
-              </button>
+                Know More
+              </a>
+              
+            </div>
+
+              
 
     </>)
 }

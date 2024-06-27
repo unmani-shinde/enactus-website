@@ -71,10 +71,9 @@ function EnactusHome2() {
       <EnactusNavBar />
 
       <div
-      className="h-screen"
+      className="h-screen flex flex-col justify-center"
         style={{ backgroundImage: `url(${EnactusTeam2})`,
           backgroundSize: "cover",
-
           backgroundPosition: "center top -10vh",
           backgroundAttachment: "fixed",
           backgroundRepeat:'no-repeat',
