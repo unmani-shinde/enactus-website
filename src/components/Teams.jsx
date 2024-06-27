@@ -39,21 +39,32 @@ function Teams() {
 
     return(
 
-    <div>
+    <div className="isolate bg-yellow-700 px-6 lg:px-8">
      <div
       style={{
         height: "100%",
         overflowX: "hidden",
-        overflowY: "scroll",
+        
         alignSelf: "center",
         alignItems: "center",
-        backgroundColor:"white"
+        backgroundColor:"transparent"
       }}
     >
-      <EnactusNavBar />
-
-     
+      <EnactusNavBar />     
       </div>
+      <div
+      className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+      aria-hidden="true"
+    >
+      <div
+className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#FFDD00] to-[#FFD700] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+style={{
+  clipPath:
+    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+}}
+/>
+
+    </div>
 
     
 
@@ -61,7 +72,7 @@ function Teams() {
         <div className="teams" ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "2vw", display: 'flex',flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',}}>
 
       
-        <p style={{ fontWeight: "700", fontSize: '3vw', marginBottom: "2vh", lineHeight: "4vw", textAlign: 'center',letterSpacing:'0.5vw',marginTop:"12vh"}}>Our Team</p>
+        <p className="text-white"style={{ fontWeight: "700", fontSize: '3vw', marginBottom:"-4vh", lineHeight: "4vw", textAlign: 'center',letterSpacing:'0.5vw'}}>Our Team</p>
         
         
         <div className="responsive-container-block container">
@@ -111,6 +122,67 @@ function Teams() {
    
  
     <div className="responsive-container-block">
+
+    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+      <div className="card">
+        <div className="team-image-wrapper">
+        <img className="team-member-image" src={techHead1} alt="vice"/>
+        </div>
+        <p className="text-blk name">
+          Unmani Shinde
+        </p>
+        <p className="text-blk position">
+          Tech Head
+        </p>
+        
+        <div className="social-icons">
+        <a href="https://www.linkedin.com/in/unmani-shinde/">
+        <img className="linkedin-icon" src={linkedIn} alt="LinkedIn" style={{height:"40px",width:"40px"}}/>
+         </a>
+        </div>
+      </div>
+    </div>
+    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+      <div className="card">
+        <div className="team-image-wrapper">
+        <img className="team-member-image" src={techHead2} alt="vice"/>
+        </div>
+        <p className="text-blk name">
+          Dhruvisha Anghan
+        </p>
+        <p className="text-blk position">
+          Tech Head
+        </p>
+        
+        <div className="social-icons">
+        <a href="https://www.linkedin.com/in/dhruvisha-anghan-298951243/">
+        <img className="linkedin-icon" src={linkedIn} alt="LinkedIn" style={{height:"40px",width:"40px"}}/>
+         </a>
+        </div>
+      </div>
+    </div>
+    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+      <div className="card">
+        <div className="team-image-wrapper">
+        <img className="team-member-image" src={techHead3} alt="vice"/>
+        </div>
+        <p className="text-blk name">
+          Dhruv Tiwari
+        </p>
+        <p className="text-blk position">
+          Tech Head
+        </p>
+        
+        <div className="social-icons">
+        <a href="https://www.linkedin.com/in/tiwaridhruv/">
+        <img className="linkedin-icon" src={linkedIn} alt="LinkedIn" style={{height:"40px",width:"40px"}}/>
+         </a>
+        </div>
+      </div>
+    </div>
+
+
+
     <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
       <div className="card">
         <div className="team-image-wrapper">
@@ -246,63 +318,7 @@ function Teams() {
         </div>
       </div>
     </div>
-    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div className="card">
-        <div className="team-image-wrapper">
-        <img className="team-member-image" src={techHead1} alt="vice"/>
-        </div>
-        <p className="text-blk name">
-          Unmani Shinde
-        </p>
-        <p className="text-blk position">
-          Tech Head
-        </p>
-        
-        <div className="social-icons">
-        <a href="https://www.linkedin.com/in/unmani-shinde/">
-        <img className="linkedin-icon" src={linkedIn} alt="LinkedIn" style={{height:"40px",width:"40px"}}/>
-         </a>
-        </div>
-      </div>
-    </div>
-    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div className="card">
-        <div className="team-image-wrapper">
-        <img className="team-member-image" src={techHead2} alt="vice"/>
-        </div>
-        <p className="text-blk name">
-          Dhruvisha Anghan
-        </p>
-        <p className="text-blk position">
-          Tech Head
-        </p>
-        
-        <div className="social-icons">
-        <a href="https://www.linkedin.com/in/dhruvisha-anghan-298951243/">
-        <img className="linkedin-icon" src={linkedIn} alt="LinkedIn" style={{height:"40px",width:"40px"}}/>
-         </a>
-        </div>
-      </div>
-    </div>
-    <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div className="card">
-        <div className="team-image-wrapper">
-        <img className="team-member-image" src={techHead3} alt="vice"/>
-        </div>
-        <p className="text-blk name">
-          Dhruv Tiwari
-        </p>
-        <p className="text-blk position">
-          Tech Head
-        </p>
-        
-        <div className="social-icons">
-        <a href="https://www.linkedin.com/in/tiwaridhruv/">
-        <img className="linkedin-icon" src={linkedIn} alt="LinkedIn" style={{height:"40px",width:"40px"}}/>
-         </a>
-        </div>
-      </div>
-    </div>
+    
     <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
       <div className="card">
         <div className="team-image-wrapper">

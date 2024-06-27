@@ -55,15 +55,22 @@
   
   .card {
     text-align: center;
+    height: 100%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
     display: flex;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10%;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
     padding-right: 25px;
     padding-bottom: 30px;
     padding-left: 25px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for more definition */
   }
+  
   
   .card-container {
     width: 280px;
@@ -71,6 +78,7 @@
     margin-right: 10px;
     margin-bottom: 25px;
     margin-left: 10px;
+    
   }
   
   .name {
@@ -79,14 +87,18 @@
     margin-bottom: 5px;
     margin-left: 0px;
     font-size: 18px;
+    color: white;
     font-weight: 800;
+    letter-spacing: 1px;
   }
   
   .position {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 10px;
+    color: white;
     margin-left: 0px;
+    
   }
   
   .feature-text {

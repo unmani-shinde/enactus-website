@@ -18,5 +18,5 @@ module.exports = {
     '!delay-[0ms]',
     'html.js :where([class*="taos:"]:not(.taos-init))'
   ],
-  plugins: [flowbite.plugin(),require('taos/plugin'),require('flowbite/plugin')],
+  plugins: [flowbite.plugin(),require('@tailwindcss/forms'),require('flowbite/plugin')],
 };

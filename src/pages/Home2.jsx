@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import Introduction from "../components/Introduction";
 import Teams from "../components/Teams";
 import EnactusNavBar from "../components/NavigationBar";
-import { SecondDivider,SecondHero,SecondSubHeading } from "../components/landing-page/page-layout-section-two";
+import { AnimatedComponents } from "../components/landing-page/page-layout-section-two";
 import { FirstHero } from "../components/landing-page/page-layout-section-one";
 // import Navbar from "../components/NavigationBar";
 
@@ -67,12 +67,12 @@ function EnactusHome2() {
   }
 
   return (
-    <div className="h-screen">
+    <div style={{backgroundColor:'black'}} className="h-screen">
       <EnactusNavBar />
 
       <div
       className="h-screen flex flex-col justify-center"
-        style={{ backgroundImage: `url(${EnactusTeam2})`,
+        style={{ backgroundImage: `url(${EnactusTeam2})`,marginTop:'-10vh',
           backgroundSize: "cover",
           backgroundPosition: "center top -10vh",
           backgroundAttachment: "fixed",
@@ -98,9 +98,7 @@ function EnactusHome2() {
           alignItems: "center",
         }}
       > 
-            <SecondHero/>
-            <SecondDivider/>
-            <SecondSubHeading/>
+            <AnimatedComponents/>
         
       </div>
 

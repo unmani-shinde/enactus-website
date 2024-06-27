@@ -127,25 +127,25 @@ function Projects() {
 
   const projects = [
     {
-      childNumber: 1,
+      childNumber: 0,
       projectName: "tatpar",
-      projectURL: "/projects#project-tatpar",
+      projectURL: "/projects",
       description:
         "The Mumbai Dabbawalas, who renowned for unique service, uplifted through Project Tatpar, prospering with identity skill and generating admirable revenue.",
       imageComponent: Tatpar,
     },
     {
-      childNumber: 2,
+      childNumber: 1,
       projectName: "nirmal",
-      projectURL: "/projects#project-nirmal",
+      projectURL: "/projects",
       description:
         " In response to the pandemic, Nirmal introduces foot-operated toilet doors, promoting contactless interaction amid social distancing, fostering a safer environment.",
       imageComponent: Nirmal,
     },
     {
-      childNumber: 3,
+      childNumber: 2,
       projectName: "eklavya",
-      projectURL: "/projects#project-eklavya",
+      projectURL: "/projects",
       description:
         "Eklavya addresses teens' school-related stress, offering exposure beyond academics, fostering well-being, & creating opportunities for the underprivileged.",
       imageComponent: Eklavya,
@@ -207,31 +207,8 @@ function Projects() {
           's support and business advisory from SPIT, we've undertaken three
           impactful projects to date.
         </p>
-      </motion.div>
-      <div
-        className="meow"
-        style={{
-          height: "60%",
-          width: "100%",
-          justifyContent: "center",
-          alignSelf: "center",
-          alignItems: "center",
-        }}
-      >
-        {projects.map((project, index) => (
-          <Card
-            key={index}
-            childNumber={project.childNumber}
-            projectDescription={project.description}
-            image={project.imageComponent}
-            url={project.projectURL}
-          >
-            {project.projectName}
-          </Card>
-        ))}
-      </div>
 
-      <div
+        <div
         style={{ marginTop: "-5vh" }}
         className="accordion w-full"
         id="accordion-collapse"
@@ -308,6 +285,32 @@ function Projects() {
           </div>
         ))}
       </div>
+
+      </motion.div>
+      <div
+        className="meow"
+        style={{
+          height: "60%",
+          width: "100%",
+          justifyContent: "center",
+          alignSelf: "center",
+          alignItems: "center",
+        }}
+      >
+        {projects.map((project, index) => (
+          <Card
+            key={index}
+            childNumber={project.childNumber}
+            projectDescription={project.description}
+            image={project.imageComponent}
+            url={project.projectURL}
+          >
+            {project.projectName}
+          </Card>
+        ))}
+      </div>
+
+     
     </div>
   );
 }
