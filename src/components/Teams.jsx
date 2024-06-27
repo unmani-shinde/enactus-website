@@ -72,7 +72,7 @@ style={{
         <div className="teams" ref={ref}style={{ height: "100%", width: '100%', border: 'solid 1px transparent', paddingTop: "2vw", display: 'flex',flexDirection: 'column',  alignSelf: 'center', alignItems: 'center',}}>
 
       
-        <p className="text-white"style={{ fontWeight: "700", fontSize: '3vw', marginBottom:"-4vh", lineHeight: "4vw", textAlign: 'center',letterSpacing:'0.5vw'}}>Our Team</p>
+        <p className="text-white lg:text-4xl md:text-4xl sm:text-2xl max-sm:text-2xl"style={{ fontWeight: "700", marginBottom:"-4vh", lineHeight: "4vw", textAlign: 'center',letterSpacing:'0.5vw'}}>Our Team</p>
         
         
         <div className="responsive-container-block container">
