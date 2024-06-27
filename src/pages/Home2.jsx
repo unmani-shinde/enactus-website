@@ -74,6 +74,7 @@ function EnactusHome2() {
       className="h-screen"
         style={{ backgroundImage: `url(${EnactusTeam2})`,
           backgroundSize: "cover",
+
           backgroundPosition: "center top -10vh",
           backgroundAttachment: "fixed",
           backgroundRepeat:'no-repeat',

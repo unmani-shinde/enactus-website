@@ -4,7 +4,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ''),
-    files:["./src/**/*.{html,js,jsx,ts,tsx}",flowbite.content(),'node_modules/flowbite-react/lib/esm/**/*.js'],
+    files:["./src/**/*.{html,js,jsx,ts,tsx}","./node_modules/flowbite/**/*.js",flowbite.content(),'node_modules/flowbite-react/lib/esm/**/*.js'],
   },
   theme: {
     extend: {
@@ -18,5 +18,5 @@ module.exports = {
     '!delay-[0ms]',
     'html.js :where([class*="taos:"]:not(.taos-init))'
   ],
-  plugins: [flowbite.plugin(),require('taos/plugin')],
+  plugins: [flowbite.plugin(),require('taos/plugin'),require('flowbite/plugin')],
 };

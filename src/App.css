@@ -104,7 +104,8 @@ video{
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
+ 
 }
 .container{
   
@@ -135,6 +136,20 @@ video{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+@media (max-width:767px) {
+  .cat{
+    display: none;
+  }  
+}
+
+@media (min-width:767px) {
+  .cat{
+    display: flex;
+    align-items: center;
+  }
+  
+}
  
 
 }
@@ -169,6 +184,14 @@ video{
   .meow{
     display: none;
   }
+}
+
+@media (max-width:768px) {
+  .overflow-list{
+    overflow-y: scroll;
+    height: 10vh;
+    
+  }  
 }
 
 @media(min-width:865px){
